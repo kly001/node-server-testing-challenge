@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  res.status(200).json({ api: "up and running" });
+    res.send('<h1>node-server-testing-challenge</h1>');
 });
 
 module.exports = server;
